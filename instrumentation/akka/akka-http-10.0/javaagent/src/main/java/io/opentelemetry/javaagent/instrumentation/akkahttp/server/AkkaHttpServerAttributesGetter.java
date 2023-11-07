@@ -67,4 +67,9 @@ class AkkaHttpServerAttributesGetter
       HttpRequest request, @Nullable HttpResponse httpResponse) {
     return AkkaHttpUtil.protocolVersion(request);
   }
+  @Override
+  public String getHttpRoute(
+      HttpRequest request) {
+    return "/testing";
+  }
 }
